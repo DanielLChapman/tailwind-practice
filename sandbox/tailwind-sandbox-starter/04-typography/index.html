@@ -5,26 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['ui-sans-serif', 'system-ui'],
+            serif: ['ui-serif', 'Georgia'],
+            mono: ['ui-monospace', 'SFMono-Regular'],
+            display: ['ui-monospace', 'SFMono-Regular']
+          }
+        }
+      }
+    </script>
     <title>Typography</title>
   </head>
   <body>
     <!-- Font Family -->
+    <div class="font-sans">default</div>
+    <div class="font-serif">serif class</div>
+    <div class="font-mono">moono</div>
+    <div class="font-display">moono</div>
 
     <!-- Font Size -->
+    <div class="text-xs">extra small</div>
+    <div class="text-sm">small</div>
+    <div class="text-base">default</div>
+    <div class="text-lg">lg</div>
+    <div class="text-xl">xl</div>
+    ... up to 9
+    <div class="text-9xl">max</div>
 
     <!-- Font Weight -->
+    <div class="font-light">liight</div>
+    <div class="font-normal">default</div>
+    <div class="font-medium">medium</div>
+    <div class="font-semibold">semi-bold</div>
+    <div class="font-bold">bold</div>
 
     <!-- Letter Spacing -->
+    <div class="tracking-tight">tight</div>
+    <div class="tracking-normal">default</div>
+    <div class="tracking-wide">wide</div>
 
     <!-- Text Alignment -->
+    <div class="text-left">left alignment</div>
+    <div class="text-right">right</div>
+    <div class="text-center">center</div>
 
     <!-- Text Decoration -->
-
+    <div class="underline decoration-4">width</div>
+    <div class="underline decoration-2">width</div>
+    <div class="underline decoration-double">double line</div>
+    <div class="underline decoration-dotted">dotted</div>
+    <div class="underline decoration-dashed">double line</div>
+    <div class="underline decoration-wavy">dotted</div>
     <!-- Decoration Style -->
 
-    <!-- Decoration Offset -->
+  
 
+    <!-- Decoration Offset -->
+    <div class="underline underline-offset-8 decoration-wavy">dotted</div>
     <!-- Text Transform -->
+    <p class="normal-case">awesome</p>
+    <p class="uppercase">awesome</p>
+    <p class="lowercase">awesome</p>
+    <p class="capitalize ">awesome</p>
   </body>
 </html>
 
