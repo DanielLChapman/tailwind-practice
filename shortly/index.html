@@ -117,125 +117,343 @@
                     id="link-form"
                     class="relative flex flex-col w-full p-10 -mt-20 space-y-4 bg-darkViolet rounded-lg md:flex-row md:space-y-0 md:space-x-3"
                 >
-                <input type="text" placeholder="Shorten a link here" id="link-input"  class="flex-1 p-3 border-2  rounded-lg placeholder-yellow-500 focus:outline-none">
-                <button class="px-10 py-3 text-white bg-cyan rounded-lg hover:bg-cyanLight focus:outline-none md:py-2">Shorten It</button>
+                    <input
+                        type="text"
+                        placeholder="Shorten a link here"
+                        id="link-input"
+                        class="flex-1 p-3 border-2 rounded-lg placeholder-yellow-500 focus:outline-none"
+                    />
+                    <button
+                        class="px-10 py-3 text-white bg-cyan rounded-lg hover:bg-cyanLight focus:outline-none md:py-2"
+                    >
+                        Shorten It
+                    </button>
 
-                <!-- error message -->
-                <div id="error-message" class="absolute left-7 bottom-3 text-red text-sm italic">
-                  
+                    <!-- error message -->
+                    <div
+                        id="error-message"
+                        class="absolute left-7 bottom-3 text-red text-sm italic"
+                    ></div>
+                </form>
+
+                <!-- link one -->
+                <div
+                    class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
+                >
+                    <p
+                        class="font-bold text-center text-veryDarkViolet md:text-left"
+                    >
+                        https://openai.com/research/gpt-4
+                    </p>
+                    <div
+                        class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0"
+                    >
+                        <div class="font-bold text-cyan">
+                            https://rel.ink/k4IKuk
+                        </div>
+                        <button
+                            class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none"
+                        >
+                            Copy
+                        </button>
+                    </div>
                 </div>
-              </form>
 
-              <!-- link one -->
-              <div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
-                <p class="font-bold text-center text-veryDarkViolet md:text-left">
-                  https://openai.com/research/gpt-4
-                </p>
-                <div class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
-                  <div class="font-bold text-cyan">
-                    https://rel.ink/k4IKuk
-                  </div>
-                  <button class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none">Copy</button>
+                <!-- link two -->
+                <div
+                    class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
+                >
+                    <p
+                        class="font-bold text-center text-veryDarkViolet md:text-left"
+                    >
+                        https://fonts.google.com/
+                    </p>
+                    <div
+                        class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0"
+                    >
+                        <div class="font-bold text-cyan">
+                            https://rel.ink/das22b
+                        </div>
+                        <button
+                            class="p-2 px-8 text-white bg-darkViolet rounded-lg hover:opacity-70 focus:outline-none"
+                        >
+                            Copy
+                        </button>
+                    </div>
                 </div>
-              </div>
 
-              <!-- link two -->
-              <div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
-                <p class="font-bold text-center text-veryDarkViolet md:text-left">
-                  https://fonts.google.com/
-                </p>
-                <div class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
-                  <div class="font-bold text-cyan">
-                    https://rel.ink/das22b
-                  </div>
-                  <button class="p-2 px-8 text-white bg-darkViolet rounded-lg hover:opacity-70 focus:outline-none">Copy</button>
+                <!-- link three -->
+                <div
+                    class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
+                >
+                    <p
+                        class="font-bold text-center text-veryDarkViolet md:text-left"
+                    >
+                        https://twitter.com/frontendmentor
+                    </p>
+                    <div
+                        class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0"
+                    >
+                        <div class="font-bold text-cyan">
+                            https://rel.ink/eeIKu3
+                        </div>
+                        <button
+                            class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none"
+                        >
+                            Copy
+                        </button>
+                    </div>
                 </div>
-              </div>
-
-              <!-- link three -->
-              <div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
-                <p class="font-bold text-center text-veryDarkViolet md:text-left">
-                  https://twitter.com/frontendmentor
-                </p>
-                <div class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
-                  <div class="font-bold text-cyan">
-                    https://rel.ink/eeIKu3
-                  </div>
-                  <button class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none">Copy</button>
-                </div>
-              </div>
-
-
             </div>
         </section>
 
         <!-- features -->
         <section id="stats" class="py-24 bg-gray-100">
-          <div class="container mx-auto px-3">
-            <h2 class="text-4xl mb-6 font-bold text-center">
-              Advanced Statistics
-            </h2>
-            <p class="max-w-xs mx-auto text-center text-gray-400 md:max-w-md">
-              Track hor your links are performing across the web with our advanced statistics dashboard.
-            </p>
-          </div>
+            <div class="container mx-auto px-3">
+                <h2 class="text-4xl mb-6 font-bold text-center">
+                    Advanced Statistics
+                </h2>
+                <p
+                    class="max-w-xs mx-auto text-center text-gray-400 md:max-w-md"
+                >
+                    Track hor your links are performing across the web with our
+                    advanced statistics dashboard.
+                </p>
+            </div>
         </section>
 
         <!-- features box section -->
         <section id="features" class="pb-32 bg-gray-100">
-          <div class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7">
-            <!-- horiztonal -->
-            <div class="hidden absolute top-24 w-10/12 left-16 h-3 bg-cyan md:block">
+            <div
+                class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7"
+            >
+                <!-- horiztonal -->
+                <div
+                    class="hidden absolute top-24 w-10/12 left-16 h-3 bg-cyan md:block"
+                ></div>
+                <!-- vertical -->
+                <div
+                    class="absolute left-1/2 w-2 h-full -ml-2 bg-cyan md:hidden"
+                ></div>
 
-            </div>
-            <!-- vertical -->
-            <div class="absolute left-1/2 w-2 h-full -ml-2 bg-cyan md:hidden"></div>
+                <!-- box 1-->
+                <div
+                    class="relative flex flex-col p-6 space-y-6 bg-white rounded-lg md:w-1/2"
+                >
+                    <!-- image position -->
+                    <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+                        <div
+                            class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet"
+                        >
+                            <img
+                                src="images/icon-brand-recognition.svg"
+                                alt=""
+                                class=""
+                            />
+                        </div>
+                    </div>
 
-            <!-- box 1-->
-            <div class="relative flex flex-col p-6 space-y-6 bg-white rounded-lg md:w-1/2">
-              <!-- image position -->
-              <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-                <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-                  <img src="images/icon-brand-recognition.svg" alt="" class="">
+                    <h5
+                        class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+                    >
+                        Brand Recognition
+                    </h5>
+                    <p class="text-center text-gray-400 md:text-left">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dicta aliquid fugit velit sed recusandae suscipit magnam
+                        similique vitae libero accusantium.
+                    </p>
                 </div>
-              </div>
 
-              <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-                Brand Recognition
-              </h5>
-              <p class="text-center text-gray-400 md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid fugit velit sed recusandae suscipit magnam similique vitae libero accusantium.</p>
-            </div>
+                <!-- box 2-->
+                <div
+                    class="relative flex flex-col mt-24 md:mt-8 p-6 space-y-6 bg-white rounded-lg md:w-1/2"
+                >
+                    <!-- image position -->
+                    <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+                        <div
+                            class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet"
+                        >
+                            <img
+                                src="images/icon-detailed-records.svg"
+                                alt=""
+                                class=""
+                            />
+                        </div>
+                    </div>
 
-            <!-- box 2-->
-            <div class="relative flex flex-col mt-24 md:mt-8 p-6 space-y-6 bg-white rounded-lg md:w-1/2">
-              <!-- image position -->
-              <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-                <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-                  <img src="images/icon-detailed-records.svg" alt="" class="">
+                    <h5
+                        class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+                    >
+                        Detailed Records
+                    </h5>
+                    <p class="text-center text-gray-400 md:text-left">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dicta aliquid fugit velit sed recusandae suscipit magnam
+                        similique vitae libero accusantium.
+                    </p>
                 </div>
-              </div>
 
-              <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-                Detailed Records
-              </h5>
-              <p class="text-center text-gray-400 md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid fugit velit sed recusandae suscipit magnam similique vitae libero accusantium.</p>
-            </div>
+                <!-- box 3 -->
+                <div
+                    class="relative flex flex-col mt-24 md:mt-16 p-6 space-y-6 bg-white rounded-lg md:w-1/2"
+                >
+                    <!-- image position -->
+                    <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+                        <div
+                            class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet"
+                        >
+                            <img
+                                src="images/icon-fully-customizable.svg"
+                                alt=""
+                                class=""
+                            />
+                        </div>
+                    </div>
 
-            <!-- box 3 -->
-            <div class="relative flex flex-col mt-24 md:mt-16 p-6 space-y-6 bg-white rounded-lg md:w-1/2">
-              <!-- image position -->
-              <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
-                <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-                  <img src="images/icon-fully-customizable.svg" alt="" class="">
+                    <h5
+                        class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+                    >
+                        Fully Customizable
+                    </h5>
+                    <p class="text-center text-gray-400 md:text-left">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dicta aliquid fugit velit sed recusandae suscipit magnam
+                        similique vitae libero accusantium.
+                    </p>
                 </div>
-              </div>
-
-              <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">
-                Fully Customizable
-              </h5>
-              <p class="text-center text-gray-400 md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid fugit velit sed recusandae suscipit magnam similique vitae libero accusantium.</p>
             </div>
-          </div>
         </section>
+        <!-- cta -->
+        <section id="cta" class="py-24 bg-darkViolet">
+            <div class="flex flex-col p-2 space-y-6">
+                <h5
+                    class="mx-auto space-y-10 text-4xl font-bold text-center text-white"
+                >
+                    Boost Your Links Today
+                </h5>
+                <button
+                    class="px-10 py-5 mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-cyanLight md:text-base md:py-3 focus:outline-none"
+                >
+                    Get Started
+                </button>
+            </div>
+        </section>
+
+        <footer class="py-16 bg-veryDarkViolet">
+            <div
+                class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start"
+            >
+                <!-- logo -->
+                <img src="images/logo.svg" alt="" class="" />
+                <!-- menus container -->
+                <div
+                    class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0"
+                >
+                    <!-- menu 1 -->
+                    <div
+                        class="flex flex-col items-center w-full md:items-start"
+                    >
+                        <div class="mb-5 font-bold text-white capitalize">
+                            Features
+                        </div>
+                        <div
+                            class="flex flex-col items-center md:items-start space-y-3"
+                        >
+                            <a
+                                href="#"
+                                class="capitalie text-grayishViolet hover:text-cyan transition duration-200"
+                                >Link Shortening</a
+                            >
+                            <a
+                                href="#"
+                                class="capitalie text-grayishViolet hover:text-cyan transition duration-200"
+                                >Branded Links</a
+                            >
+                            <a
+                                href="#"
+                                class="capitalie text-grayishViolet hover:text-cyan transition duration-200"
+                                >Analytics</a
+                            >
+                        </div>
+                    </div>
+                    <!-- menu 2-->
+                    <div
+                        class="flex flex-col items-center w-full md:items-start"
+                    >
+                        <div class="mb-5 font-bold text-white capitalize">
+                            Resources
+                        </div>
+                        <div
+                            class="flex flex-col items-center md:items-start space-y-3"
+                        >
+                            <a
+                                href="#"
+                                class="capitalie text-grayishViolet hover:text-cyan transition duration-200"
+                                >Blog</a
+                            >
+                            <a
+                                href="#"
+                                class="capitalie text-grayishViolet hover:text-cyan transition duration-200"
+                                >Developers</a
+                            >
+                            <a
+                                href="#"
+                                class="capitalie text-grayishViolet hover:text-cyan transition duration-200"
+                                >Support</a
+                            >
+                        </div>
+                    </div>
+                    <!-- menu 3-->
+                    <div
+                        class="flex flex-col items-center w-full md:items-start"
+                    >
+                        <div class="mb-5 font-bold text-white capitalize">
+                            Company
+                        </div>
+                        <div
+                            class="flex flex-col items-center md:items-start space-y-3"
+                        >
+                            <a
+                                href="#"
+                                class="capitalie text-grayishViolet hover:text-cyan transition duration-200"
+                                >About</a
+                            >
+                            <a
+                                href="#"
+                                class="capitalie text-grayishViolet hover:text-cyan transition duration-200"
+                                >Team</a
+                            >
+                            <a
+                                href="#"
+                                class="capitalie text-grayishViolet hover:text-cyan transition duration-200"
+                                >Jobs</a
+                            >
+                            <a
+                                href="#"
+                                class="capitalie text-grayishViolet hover:text-cyan transition duration-200"
+                                >Contact</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- social container -->
+                <div class="flex space-x-6">
+                  <a href="#">
+                    <img src="images/icon-facebook.svg" alt="" class="ficon transition duration-150">
+                  </a>
+                  <a href="#">
+                    <img src="images/icon-twitter.svg" alt="" class="ficon transition duration-150">
+                  </a>
+                  <a href="#">
+                    <img src="images/icon-pinterest.svg" alt="" class="ficon transition duration-150">
+                  </a>
+                  <a href="#">
+                    <img src="images/icon-instagram.svg" alt="" class="ficon transition duration-150">
+                  </a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
