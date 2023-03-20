@@ -16,22 +16,17 @@
         <title>Bookmark Website</title>
     </head>
     <body class="overflow-x-hidden">
-        <!-- header container -->
         <nav class="container relative mx-auto p-6">
+            <!-- Flex Container For Nav Items -->
             <div class="flex items-center justify-between space-x-20 my-6">
-                <!-- logo -->
-                <div class="x-30">
-                    <img
-                        src="images/logo-bookmark.svg"
-                        alt=""
-                        id="logo"
-                        class=""
-                    />
+                <!-- Logo -->
+                <div class="z-30">
+                    <img src="images/logo-bookmark.svg" alt="" id="logo" />
                 </div>
 
-                <!-- menu items -->
+                <!-- Menu Items -->
                 <div
-                    class="hidden items-center md:flex space-x-10 mt-2 uppercase text-grayishBlue"
+                    class="hidden items-center space-x-10 uppercase text-grayishBlue md:flex"
                 >
                     <a
                         href="#features"
@@ -46,14 +41,44 @@
                     <a href="#faq" class="tracking-widest hover:text-softRed"
                         >FAQ</a
                     >
+
                     <a
                         href="#"
                         class="px-8 py-2 text-white bg-softRed border-2 border-softRed rounded-lg shadow-md hover:text-softRed hover:bg-white"
-                        >Login
-                    </a>
+                        >Login</a
+                    >
                 </div>
-
-                <!-- hamburger menu -->
+                <!-- Hamburger Button -->
+                <button
+                    id="menu-btn"
+                    class="z-30 block md:hidden focus:outline-none hamburger"
+                >
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div
+                id="menu"
+                class="fixed inset-0 z-20 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue"
+            >
+                <div class="w-full py-3 text-center">
+                    <a href="#features" class="block hover:text-softRed"
+                        >Features</a
+                    >
+                </div>
+                <div class="w-full py-3 text-center">
+                    <a href="#download" class="block hover:text-softRed"
+                        >Download</a
+                    >
+                </div>
+                <div class="w-full py-3 text-center">
+                    <a href="#faq" class="block hover:text-softRed">FAQ</a>
+                </div>
+                <div class="w-full py-3 text-center">
+                    <a href="#" class="block hover:text-softRed">Login</a>
+                </div>
             </div>
         </nav>
 
@@ -336,11 +361,15 @@
                 <div class="w-full md:w-1/3">
                     <!--  box 2  -->
                     <div
-                        class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg  md:mt-8"
+                        class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:mt-8"
                     >
                         <!-- image -->
                         <div class="flex justify-center">
-                            <img src="images/logo-firefox.svg" alt="" class="" />
+                            <img
+                                src="images/logo-firefox.svg"
+                                alt=""
+                                class=""
+                            />
                         </div>
 
                         <!-- text -->
@@ -363,7 +392,7 @@
                 <div class="w-full md:w-1/3">
                     <!--  box 3  -->
                     <div
-                        class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg  md:mt-16"
+                        class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:mt-16"
                     >
                         <!-- image -->
                         <div class="flex justify-center">
@@ -389,7 +418,6 @@
             </div>
         </section>
 
-
         <!-- faq -->
         <section id="faq">
             <div class="container mx-auto">
@@ -398,7 +426,10 @@
                 </h2>
 
                 <p class="max-w-lg px-6 mx-auto text-center text-grayishBlue">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati libero perferendis cupiditate beatae nulla provident illo, ratione unde asperiores minima, molestias possimus adipisci optio tempore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati libero perferendis cupiditate beatae nulla
+                    provident illo, ratione unde asperiores minima, molestias
+                    possimus adipisci optio tempore.
                 </p>
             </div>
         </section>
@@ -411,80 +442,271 @@
                     <!-- tab-1 -->
                     <div tabindex="1" class="py-1 border-b outline-none group">
                         <!-- tab flex container -->
-                        <div class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease">
+                        <div
+                            class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+                        >
                             <!-- tab title -->
-                            <div class="transition duration-500 ease group-hover:text-red-500">
+                            <div
+                                class="transition duration-500 ease group-hover:text-red-500"
+                            >
                                 What is Bookmark?
                             </div>
                             <!-- tab arrow -->
-                            <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+                            <div
+                                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18"
+                                    height="12"
+                                >
+                                    <path
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        d="M1 1l8 8 8-8"
+                                    />
+                                </svg>
                             </div>
                         </div>
                         <!-- tab inner content -->
-                        <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
-                            <p class="py-2 text-justify text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet numquam accusantium nostrum, laudantium assumenda quas nesciunt reprehenderit ea deserunt totam nulla iure, beatae odio pariatur?</p>
+                        <div
+                            class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+                        >
+                            <p class="py-2 text-justify text-gray-400">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Amet numquam accusantium
+                                nostrum, laudantium assumenda quas nesciunt
+                                reprehenderit ea deserunt totam nulla iure,
+                                beatae odio pariatur?
+                            </p>
                         </div>
                     </div>
 
                     <!-- tab-2 -->
                     <div tabindex="2" class="py-1 border-b outline-none group">
                         <!-- tab flex container -->
-                        <div class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease">
+                        <div
+                            class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+                        >
                             <!-- tab title -->
-                            <div class="transition duration-500 ease group-hover:text-red-500">
+                            <div
+                                class="transition duration-500 ease group-hover:text-red-500"
+                            >
                                 How can I request a new browser
                             </div>
                             <!-- tab arrow -->
-                            <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+                            <div
+                                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18"
+                                    height="12"
+                                >
+                                    <path
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        d="M1 1l8 8 8-8"
+                                    />
+                                </svg>
                             </div>
                         </div>
                         <!-- tab inner content -->
-                        <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
-                            <p class="py-2 text-justify text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet numquam accusantium nostrum, laudantium assumenda quas nesciunt reprehenderit ea deserunt totam nulla iure, beatae odio pariatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, modi!</p>
+                        <div
+                            class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+                        >
+                            <p class="py-2 text-justify text-gray-400">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Amet numquam accusantium
+                                nostrum, laudantium assumenda quas nesciunt
+                                reprehenderit ea deserunt totam nulla iure,
+                                beatae odio pariatur? Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Dicta, modi!
+                            </p>
                         </div>
                     </div>
 
                     <!-- tab-3 -->
                     <div tabindex="3" class="py-1 border-b outline-none group">
                         <!-- tab flex container -->
-                        <div class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease">
+                        <div
+                            class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+                        >
                             <!-- tab title -->
-                            <div class="transition duration-500 ease group-hover:text-red-500">
+                            <div
+                                class="transition duration-500 ease group-hover:text-red-500"
+                            >
                                 Lorem, ipsum dolor.
                             </div>
                             <!-- tab arrow -->
-                            <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+                            <div
+                                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18"
+                                    height="12"
+                                >
+                                    <path
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        d="M1 1l8 8 8-8"
+                                    />
+                                </svg>
                             </div>
                         </div>
                         <!-- tab inner content -->
-                        <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
-                            <p class="py-2 text-justify text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet numquam accusantium nostrum, laudantium assumenda quas nesciunt reprehenderit ea deserunt totam nulla iure, beatae odio pariatur?</p>
+                        <div
+                            class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+                        >
+                            <p class="py-2 text-justify text-gray-400">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Amet numquam accusantium
+                                nostrum, laudantium assumenda quas nesciunt
+                                reprehenderit ea deserunt totam nulla iure,
+                                beatae odio pariatur?
+                            </p>
                         </div>
                     </div>
 
                     <!-- tab-4 -->
                     <div tabindex="4" class="py-1 border-b outline-none group">
                         <!-- tab flex container -->
-                        <div class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease">
+                        <div
+                            class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+                        >
                             <!-- tab title -->
-                            <div class="transition duration-500 ease group-hover:text-red-500">
+                            <div
+                                class="transition duration-500 ease group-hover:text-red-500"
+                            >
                                 Lorem ipsum dolor sit amet consectetur.
                             </div>
                             <!-- tab arrow -->
-                            <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+                            <div
+                                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18"
+                                    height="12"
+                                >
+                                    <path
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        d="M1 1l8 8 8-8"
+                                    />
+                                </svg>
                             </div>
                         </div>
                         <!-- tab inner content -->
-                        <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
-                            <p class="py-2 text-justify text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet numquam accusantium nostrum, laudantium assumenda quas nesciunt reprehenderit ea deserunt totam nulla iure, beatae odio pariatur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, obcaecati voluptatibus soluta exercitationem a quis eum quod quia quidem odio placeat voluptate possimus dignissimos repudiandae qui ipsam. Sit dolorem illo eligendi officia quidem fugit odio aut sint quas libero cupiditate tempore voluptatibus obcaecati, quos placeat maiores molestias nihil culpa tempora?</p>
+                        <div
+                            class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+                        >
+                            <p class="py-2 text-justify text-gray-400">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Amet numquam accusantium
+                                nostrum, laudantium assumenda quas nesciunt
+                                reprehenderit ea deserunt totam nulla iure,
+                                beatae odio pariatur? Lorem ipsum dolor sit,
+                                amet consectetur adipisicing elit. Ab, obcaecati
+                                voluptatibus soluta exercitationem a quis eum
+                                quod quia quidem odio placeat voluptate possimus
+                                dignissimos repudiandae qui ipsam. Sit dolorem
+                                illo eligendi officia quidem fugit odio aut sint
+                                quas libero cupiditate tempore voluptatibus
+                                obcaecati, quos placeat maiores molestias nihil
+                                culpa tempora?
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- newsletter section -->
+        <section id="newsletter" class="bg-softBlue">
+            <!-- main container -->
+            <div class="max-w-lg mx-auto py-24">
+                <p
+                    class="mb-6 text-lg tracking-widest text-center text-white uppercase"
+                >
+                    35,000+ Already Joined
+                </p>
+                <h2
+                    class="px-3 mb-6 text-3xl font-semibold text-center text-white md:text-4xl"
+                >
+                    Stay up-to-date with what we're doing
+                </h2>
+
+                <!-- form -->
+                <form
+                    action="POST"
+                    class="flex flex-col items-start justify-center max-w-2xl mx-auto space-y-6 text-base px-6 md:flex-row md:space-y-0 md:space-x-4 md:px-0"
+                >
+                    <div
+                        class="flex flex-col justify-between items-center mx-auto md:flex-row md:mx-0"
+                    >
+                        <input
+                            type="text"
+                            class="flex-1 px-6 pt-3 pb-2 mb-4 rounded-lg border-1 border-white focus:outline-none md:mr-3 md:mb-0"
+                            placeholder="Enter your email address"
+                        />
+
+                        <input
+                            type="submit"
+                            class="inline-flex px-6 py-3 font-semibold text-center text-white duration-200 transform rounded-lg cursor-pointer focus:outline-none bg-softRed hover:opacity-90"
+                            value="Contact Us"
+                        />
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="py-16 bg-veryDarkBlue">
+            <div
+                class="container flex flex-col items-center md:flex-row justify-between mx-auto space-y-16 md:space-y-0 px-6"
+            >
+                <!-- logo/menu -->
+                <div
+                    class="flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 md:space-x-14 text-grayishBlue"
+                >
+                    <img
+                        src="images/logo-bookmark-footer.svg"
+                        alt=""
+                        class="mb-1"
+                    />
+                    <a href="#features" class="uppercase hover:text-softRed"
+                        >Features</a
+                    >
+                    <a href="#download" class="uppercase hover:text-softRed"
+                        >Download</a
+                    >
+                    <a href="#faq" class="uppercase hover:text-softRed">FAQ</a>
+                </div>
+
+                <!-- social -->
+
+                <div class="flex space-x-10">
+                    <a href="#" class="">
+                        <img
+                            src="images/icon-facebook.svg"
+                            class="h-6 ficon"
+                            alt=""
+                        />
+                    </a>
+                    <a href="#" class="">
+                        <img
+                            src="images/icon-twitter.svg"
+                            class="h-6 ficon"
+                            alt=""
+                        />
+                    </a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
